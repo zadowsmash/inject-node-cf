@@ -57,7 +57,7 @@ Inject node.js functions into CloudFormation Templates
 
 Thanks to: 
 
-chriscoombs: https://github.com/chriscoombs
+@chriscoombs: https://github.com/chriscoombs
 
-Eric Ho: https://github.com/hbwork
+@hbwork: https://github.com/hbwork
 
