@@ -52,6 +52,8 @@ Inject node.js functions into CloudFormation Templates
 
 * You should receive an output as per the screenshot below:
 
+![Example]
+(https://s3-ap-southeast-2.amazonaws.com/760584908251-public/github_pictures/inject-node-cf.png)
 
 
 Thanks to: 
