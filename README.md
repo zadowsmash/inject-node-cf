@@ -55,7 +55,7 @@ Inject node.js functions into CloudFormation Templates
 ![Example](https://s3-ap-southeast-2.amazonaws.com/760584908251-public/github_pictures/inject-node-cf.png)
 
 
-### All Credit for this build script goes to my friends
+### All Credit for this build script goes to my friends:
 
 [@chriscoombs](https://github.com/chriscoombs)
 
