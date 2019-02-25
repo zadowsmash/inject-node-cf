@@ -13,4 +13,7 @@ code here
 ```
 
 
-Thanks to @chriscoombs
+Thanks to: 
+chriscoombs https://github.com/chriscoombs
+Eric Ho https://github.com/hbwork
+
