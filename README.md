@@ -11,3 +11,6 @@ Inject node.js functions into CloudFormation Temaplates
 code here
 
 ```
+
+
+Thanks to @chriscoombs
