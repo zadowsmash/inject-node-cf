@@ -42,6 +42,8 @@ Inject node.js functions into CloudFormation Temaplates
 
 
 Thanks to: 
+
 chriscoombs https://github.com/chriscoombs
+
 Eric Ho https://github.com/hbwork
 
