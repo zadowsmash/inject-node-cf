@@ -1,1 +1,49 @@
-{"AWSTemplateFormatVersion":"2010-09-09","Description":"Update SAML Metadata","Parameters":{"lambdaEnvVar":{"Type":"String"}},"Resources":{"LambdaRole":{"Type":"AWS::IAM::Role","Properties":{"AssumeRolePolicyDocument":{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"Service":["lambda.amazonaws.com"]},"Action":["sts:AssumeRole"]}]},"ManagedPolicyArns":["arn:aws:iam::aws:policy/AdministratorAccess"]}},"ExampleFunction":{"Type":"AWS::Lambda::Function","Properties":{"Code":{"ZipFile":"const helloworld = 'Hello World!';\nconst foobar = \"foobar\";\nconsole.log(helloworld);"},"Handler":"index.handler","MemorySize":"256","Timeout":"300","Role":{"Fn::GetAtt":["LambdaRole","Arn"]},"Runtime":"nodejs8.10","Environment":{"Variables":{"lambdaEnvVar":{"Ref":"lambdaEnvVar"}}}}}}}
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "Update SAML Metadata",
+    "Parameters": {
+        "lambdaEnvVar": {
+            "Type": "String"
+        }
+    },
+    "Resources": {
+        "LambdaRole": {
+            "Type": "AWS::IAM::Role",
+            "Properties": {
+                "AssumeRolePolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [{
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": ["lambda.amazonaws.com"]
+                        },
+                        "Action": ["sts:AssumeRole"]
+                    }]
+                },
+                "ManagedPolicyArns": ["arn:aws:iam::aws:policy/AdministratorAccess"]
+            }
+        },
+        "ExampleFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+                "Code": {
+                    "ZipFile": "const helloworld = 'Hello World!';\nconst foobar = 'foobar';\nconsole.log(` Cheeesy ${helloworld} ${foobar} example!`);"
+                },
+                "Handler": "index.handler",
+                "MemorySize": "256",
+                "Timeout": "300",
+                "Role": {
+                    "Fn::GetAtt": ["LambdaRole", "Arn"]
+                },
+                "Runtime": "nodejs8.10",
+                "Environment": {
+                    "Variables": {
+                        "lambdaEnvVar": {
+                            "Ref": "lambdaEnvVar"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
