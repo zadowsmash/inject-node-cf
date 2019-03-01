@@ -46,7 +46,7 @@ Inject node.js functions into CloudFormation Templates
 
 ```
 
-# node build.js build-infra
+# node build.js cf-infra
 
 ```
 
