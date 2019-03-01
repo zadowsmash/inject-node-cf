@@ -3,7 +3,7 @@ Inject node.js functions into CloudFormation Templates
 
 ## Usage
 
-* Place the **inject-node-cf** directory above your other directory that your node.js function lives in.
+* Place the **inject-node-cf** directory outside the other directory that your node.js function lives in.
 * Write your node.js function (must be named index.js) inside a directory named **EXACTLY** the same name as the logical name you have called it within your  **AWS::Lambda::Function** resource section witin your CF template. 
 
 
@@ -40,9 +40,10 @@ Inject node.js functions into CloudFormation Templates
 
 ```
 
-* Inside the **inject-node-cf** directory make a directory whatever you want to call your function. (ie build-infra)
-* Insie the above mentioned directory (ie build-infra) you create, make your CF template and call it build-infra.template.json
-* Oncd your function is ready to be inserted. cd into the **inject-node-cf**  directory and run command:
+* Inside the **inject-node-cf** directory, cd into the **Projects** directory.
+* Create a directory named whatever you want to call your CF template (ie. cf-infra).
+* Inside the above mentioned directory you just created, place youf CF template there and it must have **.template.json** appended to the name (ie cf-infra.template.json) 
+* Once your function is ready to be inserted. cd into the **inject-node-cf/Projects**  directory and run command:
 
 ```
 
