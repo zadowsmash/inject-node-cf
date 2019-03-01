@@ -4,7 +4,7 @@ Inject node.js functions into CloudFormation Templates
 ## Usage
 
 * Place the **inject-node-cf** directory outside the other directory that your node.js function lives in.
-* Write your node.js function (must be named index.js) inside a directory named **EXACTLY** the same name as the logical name you have called it within your  **AWS::Lambda::Function** resource section witin your CF template. 
+* Write your node.js function (must be named index.js) inside a directory named **EXACTLY** the same name as the logical name you have called it within your  **AWS::Lambda::Function** resource section within your CF template. 
 
 
     In the example below the name is **functionName**
