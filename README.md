@@ -40,10 +40,9 @@ Inject node.js functions into CloudFormation Templates
 
 ```
 
-* Inside the **inject-node-cf** directory, cd into the **Projects** directory.
-* Create a directory named whatever you want to call your CF template (ie. cf-infra).
-* Inside the above mentioned directory you just created, place youf CF template there and it must have **.template.json** appended to the name (ie cf-infra.template.json) 
-* Once your function is ready to be inserted. cd into the **inject-node-cf/Projects**  directory and run command:
+* Inside the **inject-node-cf/Projects** directory, create a directory named whatever you want to call your CF template (ie. cf-infra).
+* Inside the above mentioned directory (ie. cf-infra) you just created, place youf CF template there and it must have **.template.json** appended to the name (ie cf-infra.template.json) 
+* Once your function is ready to be inserted. Make sure you are in the  **inject-node-cf/Projects**  directory and run command:
 
 ```
 
